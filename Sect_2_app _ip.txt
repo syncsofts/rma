@@ -1,0 +1,139 @@
+10.60.20.194:7041 
+
+
+
+
+
+
+
+to restrict Linux user:
+
+https://unix.stackexchange.com/questions/442970/create-an-user-in-linux-that-can-access-only-a-specific-folder/443208
+
+REP-3335: An unhandled internal CA error occurred.aaaac 44 3113, (null), 0, ORA-03113: end-of-file on communication channel 
+
+after log time first report get hang   weblogic 12c Linux
+
+tuning reports:
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=175734152186604&id=1145261.1&_afrWindowMode=0&_adf.ctrl-state=ynpvj6ew_53
+
+
+https://docs.oracle.com/middleware/11119/classic/use-reports/pbr_tune004.htm
+http://dirknachbar.blogspot.com/2017/09/configure-oracle-reports-12c-122x-for.html
+
+
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=456839832316574&id=1596871.1&_afrWindowMode=0&_adf.ctrl-state=extyg5w1r_4
+
+https://blogs.oracle.com/fusionmiddlewaresupport/oracle-forms-a-closer-look-at-the-jre-security-warnings-related-to-jar-signing-and-manifests-v2
+
+cvs installation :
+https://www.drydeadfish.co.uk/cvs/
+
+import certificate on OHS 
+https://knowledge.digicert.com/solution/SO21181.html
+
+Date 23032019
+
+added in bash_profile /fr/Oracle/Middleware/Oracle_Home/oracle_common/jdk/bin
+
+
+Do you want to continue? The connection to this website is untrusted.
+Note: The certificate is not valid and cannot be used to verify the identity of this website.
+
+
+
+
+General Exception Name: oracle.forms.engine.Main
+ExitException: java.security.cert.CertificateException:Java couldn't trust Server
+
+
+
+10.1.20.194   root r_ghy194   
+weblogic      mantra_194
+
+weblogic   weblogic1
+. Install OS  7.1 --- ip   10.60.20.194     , hostname     s67r71csa,   root--     csaapp_11    csaapp_7
+. create user oracle: ora_11, odb: ora_11  and adf :aps$194     root  vnc: vnc_194                
+. create  DB and listener
+. Install infrastructure
+. Install forms and reports
+. Install RCU
+. configure weblogic	
+
+https://www.databaseadm.com/article/13574969/Got+exception+for+SSL+configuration+for+Oracle+HTTP+Server
+
+https://blogs.oracle.com/fusionmiddlewaresupport/oracle-forms-a-closer-look-at-the-jre-security-warnings-related-to-jar-signing-and-manifests-v2
+
+
+
+DSHQ   10.1.20.194  old is on port 7005 and new on port 7011   (username weblogic, pwd mantra_194)
+https://125.19.35.85:7787/forms/frmservlet?config=manthan
+
+
+-----------------------------------------------------------------------------------------------------------
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/12c/12_2_1/004-13-001-ohsCP/ohsCP.html
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/12c/12_2_1/004-13-001-ohsCP/ohsCP.html
+
+telnet 192.658.152.45 7001
+
+
+https://14.141.28.11:7787/forms/frmservlet?config=manthan
+https://14.141.28.11:9011/forms/frmservlet?config=manthan
+SSL working for local N/W...
+
+-------------------------------------------------------
+public URL for 10.1.25.197:
+http://115.111.244.168:7787/forms/frmservlet?config=csa
+
+
+weblogic   weblogic1
+username: weblogic pwd: weblogic1 
+
+1. Start the server
+2. change ip
+
+
+IP=10.60.20.194
+NETMASK=255.255.255.0
+GATEWAY=10.60.25.1
+DNS1=10.60.25.10
+DNS2=10.1.25.114
+DOMAIN=dsl.com
+
+
+
+
+
+-------------------------------------------------------
+new rcu on 10.1.20.194 (at DSHQ):
+
+name: dsmanthan
+
+username: weblogic  passwd: mantra_194
+
+---------------------------------------------------------------
+
+
+Great Link: 
+https://oracle-base.com/articles/11g/oracle-db-11gr2-installation-on-oracle-linux-7
+
+
+
+
+ORACLE_SID=repo; 
+export ORACLE_SID
+ORACLE_HOME=/odb/odb/app/odb/product/11.2.0/dbhome_1
+export ORACLE_HOME
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$ORACLE_HOME:$ORACLE_HOME/bin
+
+
+ip_repsvr table
+10.1.20.194	rep_wls_reports_s67r71csa	Y	9012
+
+
+
+
+
+FRM-41213: Unable to connect to report server rep_wls_reports_   weblogic forms reports 12c
+
+http://10.1.20.194:9012/reports/rwservlet/getjobid1925532?server=rep_wls_reports_s67r71csa
